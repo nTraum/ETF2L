@@ -1,4 +1,16 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-# Specify your gem's dependencies in etf2l.gemspec
+
+
+group :development do
+  gem "yard"
+end
+
+group :test do
+  gem "coveralls", require: false
+  gem "rake"
+  gem "rspec"
+  gem "simplecov", require: false
+end
+
 gemspec
