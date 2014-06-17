@@ -1,9 +1,11 @@
 require "coveralls"
 Coveralls.wear!
 
+include Etf2l
+
 RSpec.configure do |config|
   if config.files_to_run.one?
-    config.default_formatter = 'doc'
+    config.default_formatter = "doc"
   end
 
   config.profile_examples = 10
