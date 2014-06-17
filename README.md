@@ -1,12 +1,12 @@
-# Etf2l
+# ETF2L
 
-TODO: Write a gem description
+Ruby wrapper for the ETF2L API.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'etf2l'
+    gem "etf2l"
 
 And then execute:
 
@@ -22,7 +22,7 @@ TODO: Write usage instructions here
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/etf2l/fork )
+1. Fork it ( https://github.com/nTraum/ETF2L/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
