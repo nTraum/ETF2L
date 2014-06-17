@@ -1,5 +1,6 @@
 # ETF2L
 [![Build Status](https://travis-ci.org/nTraum/ETF2L.svg?branch=master)](https://travis-ci.org/nTraum/ETF2L)
+[![Coverage Status](https://img.shields.io/coveralls/nTraum/ETF2L.svg)](https://coveralls.io/r/nTraum/ETF2L)
 [![Dependency Status](https://gemnasium.com/nTraum/ETF2L.svg)](https://gemnasium.com/nTraum/ETF2L)
 [![Code Climate](https://codeclimate.com/github/nTraum/ETF2L.png)](https://codeclimate.com/github/nTraum/ETF2L)
 
