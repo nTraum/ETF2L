@@ -4,21 +4,27 @@
 [![Dependency Status](https://gemnasium.com/nTraum/ETF2L.svg)](https://gemnasium.com/nTraum/ETF2L)
 [![Code Climate](https://codeclimate.com/github/nTraum/ETF2L.png)](https://codeclimate.com/github/nTraum/ETF2L)
 
-Ruby wrapper for the ETF2L API.
+Ruby wrapper for the [ETF2L API](http://api.etf2l.org/).
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem "etf2l"
+```ruby
+gem "etf2l"
+```
 
 And then execute:
 
-    $ bundle
+```sh
+$ bundle
+```
 
 Or install it yourself as:
 
-    $ gem install etf2l
+```sh
+$ gem install etf2l
+```
 
 ## Usage
 
