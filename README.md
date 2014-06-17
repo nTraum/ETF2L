@@ -1,4 +1,5 @@
 # ETF2L
+[![Build Status](https://travis-ci.org/nTraum/ETF2L.svg?branch=master)](https://travis-ci.org/nTraum/ETF2L)
 
 Ruby wrapper for the ETF2L API.
 
