@@ -9,6 +9,7 @@ group :test do
   gem "coveralls", require: false
   gem "rake"
   gem "rspec"
+  gem "simplecov", require: false
 end
 
 gemspec

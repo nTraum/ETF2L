@@ -1,6 +1,15 @@
+require "simplecov"
 require "coveralls"
-Coveralls.wear!
 
+SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
+  Coveralls::SimpleCov::Formatter,
+  SimpleCov::Formatter::HTMLFormatter
+]
+SimpleCov.start do
+  add_filter "spec"
+end
+
+require "etf2l"
 include Etf2l
 
 RSpec.configure do |config|
