@@ -1,5 +1,11 @@
 module Etf2l
+
+  # Player of the ETF2L.
   class Player
+    # @!attribute [r] bans
+    #   @return [Array<Ban>] An array of bans currently affecting the player.
+    # @!attribute [r] country
+    #   @return [String] nationality of the player.
     attr_reader :bans,
                 :country,
                 :classes,
@@ -9,6 +15,7 @@ module Etf2l
                 :steam
 
     alias :nickname :name
+    alias :nationality :country
 
     def initialize(attributes)
       @bans = []
@@ -20,6 +27,8 @@ module Etf2l
       @steam = Steam.new(attributes["steam"])
     end
 
+    # Returns true if the player is currently banned.
+    # @return [Boolean] true the player is currently banned.
     def banned?
       bans.any?
     end
