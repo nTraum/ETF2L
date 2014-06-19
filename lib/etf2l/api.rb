@@ -7,8 +7,6 @@ module Etf2l
     headers "accept" => "application/json"
     format :json
 
-
-
     # Returns the requested player.
     # @param identifier [Fixnum, String] ETF2L ID, SteamID or SteamID64 of
     #   the player.
