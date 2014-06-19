@@ -16,7 +16,7 @@ module Etf2l
     # @return [Player] The requested player.
     # @example by ETF2L ID
     #    API.player(10512)
-    # @example by StemaID
+    # @example by SteamID
     #    API.player("STEAM_0:0:18721806")
     # @example by SteamID64
     #    API.player(76561197997709340)
