@@ -1,0 +1,37 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api-v1.etf2l.org/player/10512
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 19 Jun 2014 16:41:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3705'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: |
+        {"status":{"code":200,"message":"OK"},"player":{"country":"Germany","classes":["Demoman","Soldier"],"teams":[{"country":"Germany","name":"Ein Traum die Buben","urls":{"matches":"http://api-v1.etf2l.org/team/16871/matches","transfers":"http://api-v1.etf2l.org/team/16871/transfers","self":"http://api-v1.etf2l.org/team/16871","results":"http://api-v1.etf2l.org/team/16871/results"},"steam":{"group":null,"avatar":"http://api-v1.etf2l.org/img/unknown_avatar_full.jpg"},"homepage":null,"irc":{"network":null,"channel":null},"competitions":{"171":{"competition":"Basketball 2on2 Cup #5 powered by Tt eSPORTS - Group Stage","division":{"tier":null,"name":"Coppenhagen Division"},"url":"http://api-v1.etf2l.org/competition/171","category":"Basketball Cup"}},"id":16871,"server":null,"tag":"TB","type":"2on2"},{"country":"Germany","name":"LAME Highlander","urls":{"matches":"http://api-v1.etf2l.org/team/15914/matches","transfers":"http://api-v1.etf2l.org/team/15914/transfers","self":"http://api-v1.etf2l.org/team/15914","results":"http://api-v1.etf2l.org/team/15914/results"},"steam":{"group":null,"avatar":"http://api-v1.etf2l.org/img/unknown_avatar_full.jpg"},"homepage":"http://www.lamarama.de","irc":{"network":null,"channel":null},"competitions":{"156":{"competition":"Highlander Season 3","division":{"tier":4,"name":"Division 4B"},"url":"http://api-v1.etf2l.org/competition/156","category":"Highlander Season"},"184":{"competition":"Highlander Season 4 powered by BlackOut Gaming","division":{"tier":3,"name":"Division 3B"},"url":"http://api-v1.etf2l.org/competition/184","category":"Highlander Season"}},"id":15914,"server":"lamarama.de:27016","tag":"LAME","type":"Highlander"},{"country":"AustriaGermany","name":"LAME powered by LAME","urls":{"matches":"http://api-v1.etf2l.org/team/12422/matches","transfers":"http://api-v1.etf2l.org/team/12422/transfers","self":"http://api-v1.etf2l.org/team/12422","results":"http://api-v1.etf2l.org/team/12422/results"},"steam":{"group":"lamarama","avatar":"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/e1/e18dc0a92f011a3a20c22f5e2185e6aa07894619_full.jpg"},"homepage":"http://goo.gl/vLg9m","irc":{"network":null,"channel":null},"competitions":{"170":{"competition":"Season 14 powered by Twitch","division":{"tier":4,"name":"Division 4G"},"url":"http://api-v1.etf2l.org/competition/170","category":"6v6 Season"},"244":{"competition":"Season 17 powered by Tt eSPORTS","division":{"tier":5,"name":"Division 5C"},"url":"http://api-v1.etf2l.org/competition/244","category":"6v6 Season"},"139":{"competition":"Season 13 powered by Tt eSPORTS","division":{"tier":4,"name":"Division 4D"},"url":"http://api-v1.etf2l.org/competition/139","category":"6v6 Season"},"208":{"competition":"Season 15 powered by BlackOut Gaming","division":{"tier":4,"name":"Division 4G"},"url":"http://api-v1.etf2l.org/competition/208","category":"6v6 Season"},"117":{"competition":"Season 12 powered by Tt eSPORTS","division":{"tier":4,"name":"Division 4B"},"url":"http://api-v1.etf2l.org/competition/117","category":"6v6 Season"},"107":{"competition":"Season 11","division":{"tier":5,"name":"Division 5F"},"url":"http://api-v1.etf2l.org/competition/107","category":"6v6 Season"}},"id":12422,"server":null,"tag":"LAME","type":"6on6"}],"bans":null,"name":"nTraum","urls":{"transfers":"http://api-v1.etf2l.org/player/10512/transfers","self":"http://api-v1.etf2l.org/player/10512","results":"http://api-v1.etf2l.org/player/10512/results"},"steam":{"avatar":"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/65/65044ba608c1a1c03a163e9d8291871e2e9474cf_full.jpg","id":"STEAM_0:0:18721806","id64":"76561197997709340"},"id":10512,"title":"Site Admin"}}
+    http_version: 
+  recorded_at: Thu, 19 Jun 2014 16:41:41 GMT
+recorded_with: VCR 2.9.2
