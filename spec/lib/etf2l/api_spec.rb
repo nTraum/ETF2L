@@ -1,9 +1,10 @@
 describe API, vcr: true do
   context "when fetched by id" do
     let(:id) { 10512 }
-    subject(:player) { API.player(id) }
+    subject(:player) { described_class.player(id) }
 
-    xit "fetches the bans" do
+    it "fetches the bans" do
+      expect(player.bans).to be_empty
     end
 
     it "fetches the classes" do
