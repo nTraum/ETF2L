@@ -49,6 +49,10 @@ describe API, vcr: true do
     let(:identifier) { 91596 }
     subject(:player) { described_class.player(identifier) }
 
+    it "is banned" do
+      expect(player.banned?).to eq(true)
+    end
+
     it "fetches the ban start time" do
       expect(player.bans.first.start).to eq(Time.at(1398463200))
     end
