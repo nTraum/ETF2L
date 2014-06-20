@@ -22,5 +22,16 @@ module Etf2l
       response = get("/player/#{identifier}")
       Player.new(response["player"])
     end
+
+
+    # Returns an array of (currently used) whitelists.
+    #
+    # @return [Array<Whitelist>] an array of (currently used) whitelists.
+    def self.whitelists
+      response = get("/whitelists")
+      response["whitelists"].map do |name, attributes|
+        Whitelist.new(attributes.merge("name" => name))
+      end
+    end
   end
 end

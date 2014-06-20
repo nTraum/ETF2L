@@ -1,0 +1,37 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api-v1.etf2l.org/whitelists
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 20 Jun 2014 15:15:02 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '610'
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+    body:
+      encoding: UTF-8
+      string: |
+        {"status":{"code":200,"message":"OK"},"whitelists":{"ETF2L Ultiduo":{"filename":"etf2l_whitelist_ultiduo","last_change":1403171640,"url":"http://etf2l.org/configs/etf2l_whitelist_ultiduo.txt"},"ETF2L Season 18":{"filename":"etf2l_whitelist_6v6","last_change":1403171640,"url":"http://etf2l.org/configs/etf2l_whitelist_6v6.txt"},"ETF2L BBall":{"filename":"etf2l_whitelist_bball","last_change":1403171640,"url":"http://etf2l.org/configs/etf2l_whitelist_bball.txt"},"ETF2L Highlander Season 6":{"filename":"etf2l_whitelist_9v9","last_change":1403171640,"url":"http://etf2l.org/configs/etf2l_whitelist_9v9.txt"}}}
+    http_version: 
+  recorded_at: Fri, 20 Jun 2014 15:15:02 GMT
+recorded_with: VCR 2.9.2

@@ -65,4 +65,11 @@ describe API, vcr: true do
       expect(player.bans.first.reason).to eq("VAC Ban")
     end
   end
+
+  it "fetches the whitelists" do
+    whitelists = API.whitelists
+    expect(whitelists).to be_an(Array)
+    expect(whitelists.first).to be_a(Whitelist)
+    expect(whitelists.first.name).to eq("ETF2L Ultiduo")
+  end
 end
