@@ -13,11 +13,11 @@ module Etf2l
     #
     # @return [Player] The requested player.
     # @example by ETF2L ID
-    #    API.player(10512)
+    #   API.player(10512)
     # @example by SteamID
-    #    API.player("STEAM_0:0:18721806")
+    #   API.player("STEAM_0:0:18721806")
     # @example by SteamID64
-    #    API.player(76561197997709340)
+    #   API.player(76561197997709340)
     def self.player(identifier)
       response = get("/player/#{identifier}")
       Player.new(response["player"])
@@ -25,7 +25,8 @@ module Etf2l
 
 
     # Returns an array of (currently used) whitelists.
-    #
+    # @example
+    #  API.whitelists
     # @return [Array<Whitelist>] an array of (currently used) whitelists.
     def self.whitelists
       response = get("/whitelists")

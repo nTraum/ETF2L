@@ -28,7 +28,15 @@ $ gem install etf2l
 
 ## Usage
 
-TODO: Write usage instructions here
+### Whitelists
+
+Fetch an array of whitelists currently used in the ETF2L:
+
+```ruby
+whitelists = Etf2l::API.whitelists
+whitelists.first.name #=> "ETF2L Ultiduo"
+whitelists.first.url  #=> "http://etf2l.org/configs/etf2l_whitelist_ultiduo.txt"
+```
 
 ## Contributing
 
