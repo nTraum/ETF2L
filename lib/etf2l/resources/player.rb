@@ -25,6 +25,10 @@ module Etf2l
       @name = attributes["name"]
       @title = attributes["title"]
       @steam = Steam.new(attributes["steam"])
+
+      if attributes["bans"]
+        attributes["bans"].each { |ban| @bans << Ban.new(ban) }
+      end
     end
 
     # Returns true if the player is currently banned.

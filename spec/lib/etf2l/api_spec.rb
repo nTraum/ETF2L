@@ -1,10 +1,11 @@
 describe API, vcr: true do
-  context "when fetched by id" do
-    let(:id) { 10512 }
-    subject(:player) { described_class.player(id) }
+  context "when the player is fetched by id" do
+    let(:identifier) { 10512 }
+    subject(:player) { described_class.player(identifier) }
 
     it "fetches the bans" do
       expect(player.bans).to be_empty
+      expect(player.banned?).to eq(false)
     end
 
     it "fetches the classes" do
@@ -16,7 +17,7 @@ describe API, vcr: true do
     end
 
     it "fetches the id" do
-      expect(player.id).to eq(id)
+      expect(player.id).to eq(identifier)
     end
 
     it "fetches the name" do
@@ -41,6 +42,23 @@ describe API, vcr: true do
 
     it "fetches the SteamID64" do
       expect(player.steam.id64).to eq(76561197997709340)
+    end
+  end
+
+  context "when the player is currently banned" do
+    let(:identifier) { 91596 }
+    subject(:player) { described_class.player(identifier) }
+
+    it "fetches the ban start time" do
+      expect(player.bans.first.start).to eq(Time.at(1398463200))
+    end
+
+    it "fetches the ban end time" do
+      expect(player.bans.first.end).to eq(Time.at(1429999200))
+    end
+
+    it "fetches the ban reason" do
+      expect(player.bans.first.reason).to eq("VAC Ban")
     end
   end
 end
