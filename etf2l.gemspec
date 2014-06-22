@@ -18,6 +18,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "httparty", "~> 0.13"
+  spec.add_dependency "memoizable", "~> 0.4"
 
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "coveralls"

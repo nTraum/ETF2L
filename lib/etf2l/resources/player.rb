@@ -1,7 +1,12 @@
+require "memoizable"
+
 module Etf2l
 
   # Player of the ETF2L.
   class Player
+
+    include Memoizable
+
     # @!attribute [r] bans
     #   @return [Array<Ban>] An array of bans currently affecting the player.
     # @!attribute [r] country
@@ -36,5 +41,7 @@ module Etf2l
     def banned?
       bans.any?
     end
+
+    memoize :banned?
   end
 end

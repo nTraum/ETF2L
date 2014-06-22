@@ -1,5 +1,9 @@
+require "memoizable"
+
 module Etf2l
   class Ban
+    include Memoizable
+
     attr_reader :start, :end, :reason
 
     def initialize(attributes)
@@ -14,5 +18,7 @@ module Etf2l
     def duration
       (self.end - start).round
     end
+
+    memoize :duration
   end
 end
